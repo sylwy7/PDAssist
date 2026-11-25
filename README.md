@@ -1,5 +1,7 @@
 # 🚓 PDAssist v1.0 — B-Zone RPG
 
+(modul e facut recent in mare parte cu ajutorul AI-ului, s-ar putea sa apara buguri, sper cat mai putine. in caz ca gasiti buguri, mesaj pe discord: sylwy)
+
 **Modul complet pentru LSPD / LVPD / SFPD / FBI / NG, refăcut de la zero în MoonLoader.**
 Meniuri moderne, roată de interacțiune, HUD, notificări și automatizări. Totul se configurează din joc, fără să umbli prin fișiere.
 
@@ -11,14 +13,73 @@ PDAssist pornește de la **PDHelper V7.5 (CLEO)** de TheTom. Toate comenzile vec
 
 ---
 
-## 📸 Capturi de ecran
+## 📸 Pe scurt
 
-<!-- Pune pozele intr-un folder "images" in repo si scoate comentariul de mai jos -->
-<!--
+![PDAssist în joc](images/preview.png)
+
 | Panoul /pdc | Roata de interacțiune | HUD + notificări |
 |:---:|:---:|:---:|
-| ![pdc](images/pdc.png) | ![roata](images/roata.png) | ![hud](images/hud.png) |
--->
+| ![pdc](images/pdc-general.png) | ![roata](images/roata-pe-jos.png) | ![hud](images/hud-modern.png) |
+
+---
+
+## 🗂️ Panoul /pdc, tab cu tab
+
+Tot modul se configurează de aici: **K** sau `/pdc`.
+
+### General
+Departamentul (LSPD / LVPD / SFPD / FBI / NG), echipa (Rutieră / SWAT), limba interfeței, limba sancțiunilor, stilul HUD-ului și al notificărilor, stilul meniului `/san`.
+
+![General](images/pdc-general.png)
+
+### Radar *(doar pentru Rutieră)*
+Zona și limita radarului, presetările de zone, ultimii prinși pe radar.
+
+![Radar](images/pdc-radar.png)
+
+### Automatizări
+/find inteligent, auto-arrest, pornire automată a motorului, Start/Stop, tasta C pentru porți și lift.
+
+![Automatizari](images/pdc-automatizari.png)
+
+### Taste & HUD
+Toate tastele modului, ce apare în HUD și în ce ordine, keybind-urile tale cu iconițe, mărimea HUD-ului.
+
+![Taste & HUD](images/pdc-taste-hud.png)
+![Keybind-uri custom](images/pdc-keybinds.png)
+![Ordinea in HUD](images/pdc-hud-ordine.png)
+
+### Roata
+Modul Hold / Touch, mărimea, ordinea și afișarea feliilor pe fiecare nivel, feliile și submeniurile tale, preview live.
+
+![Roata - editor](images/pdc-roata.png)
+![Roata - preview](images/pdc-roata-preview.png)
+![Roata - elemente proprii](images/pdc-roata-custom.png)
+
+### Aspect
+Culorile HUD-ului și ale notificărilor, cu preview.
+
+![Aspect](images/pdc-aspect.png)
+
+### FVR & GOV
+Textele pentru FVR pe `/r` și `/d`, secundele și liniile de `/gov`.
+
+![FVR & GOV](images/pdc-fvr-gov.png)
+
+### Comenzi Custom
+Până la 100 de scurtături proprii, cu variabile și mai multe comenzi una după alta.
+
+![Comenzi Custom](images/pdc-comenzi-custom.png)
+
+### Cont & PIN
+Login și PIN automat, cu parola salvată criptat.
+
+![Cont & PIN](images/pdc-cont-pin.png)
+
+### Ghid Comenzi
+Toate comenzile modului, pe categorii, direct în joc.
+
+![Ghid Comenzi](images/pdc-ghid.png)
 
 ---
 
@@ -29,6 +90,10 @@ PDAssist pornește de la **PDHelper V7.5 (CLEO)** de TheTom. Toate comenzile vec
 - Ține cont automat de **nivelul jucătorului** și de **jail**, acolo unde regulamentul o cere (NOS, contrasens, parcare, alcoolemie peste 3.0 etc.).
 - Sancțiunile se trimit în **română sau engleză**, în funcție de jucătorul pe care îl sancționezi.
 - Dacă vrei, poți folosi și varianta clasică, cu dialog SA-MP.
+
+![Meniul /san](images/san-meniu.png)
+![/san - wanted](images/san-wanted.png)
+![/san - dialog clasic](images/san-clasic.png)
 
 ### 🎯 Roata de interacțiune: tasta **F2**
 - **Șofer:** Eject / Cuff / Uncuff / Repair.
@@ -44,11 +109,24 @@ PDAssist pornește de la **PDHelper V7.5 (CLEO)** de TheTom. Toate comenzile vec
   - ai preview live pe ecran, cu click prin submeniuri;
   - poți schimba mărimea roții.
 
+| Pe jos | În mașină | Meniul jucătorului |
+|:---:|:---:|:---:|
+| ![Roata pe jos](images/roata-pe-jos.png) | ![Roata in masina](images/roata-masina.png) | ![Meniu jucator](images/roata-jucator.png) |
+
+| Alegerea jucătorului | Wanted | Confiscă | Spawn |
+|:---:|:---:|:---:|:---:|
+| ![Interact](images/roata-interact.png) | ![Wanted](images/roata-wanted.png) | ![Confisca](images/roata-confisca.png) | ![Spawn](images/roata-spawn.png) |
+
+![Roata in Jail - celule](images/roata-jail.png)
+
 ### 🚨 Rutieră și radar
 - `/startradar <limită>`: radar automat, cu **presetări de zone**.
 - `/sl`: sancționează automat ultimul vitezoman prins sau unul dintre ultimii 5 (`/last`).
 - `/ll`, `/potls`, `/patls` etc.: întrebări pe `/d` pentru zonă de radar sau patrulare, cu timer.
 - Comenzi scurte pentru fiecare amendă de pe rutieră: `/aa`, `/aa50`, `/aa100`, `/faruri`, `/nos`, `/con`, `/parc`, `/hidra`, `/alc15`, `/alc30`…
+
+![Radar in actiune](images/radar.png)
+![/last](images/radar-last.png)
 
 ### 🔫 Wanted, arest și urmăriri
 - Comenzi pentru fiecare motiv de wanted: `/nec`, `/run`, `/nef`, `/cat`, `/notp`, `/comp`, `/wdr`, `/bm`.
@@ -58,11 +136,23 @@ PDAssist pornește de la **PDHelper V7.5 (CLEO)** de TheTom. Toate comenzile vec
 - `/afk` / `/ffk`: anunț AFK cu clepsidră de 3 minute sau 30 de secunde.
 - `/jc`: lista din `/jaillist` cu celula fiecăruia.
 
+![Auto-arrest in HUD](images/arrest-hud.png)
+![/find automat](images/find.png)
+![/afk](images/afk.png)
+![/jc](images/jc.png)
+
 ### 🖥️ HUD și notificări
 - **HUD modern** (dreapta, cu iconițe) sau **HUD clasic PDHelper** (fontul Days, ca pe vremuri).
 - Alegi ce taste apar în HUD și în ce ordine (drag & drop). Fiecare tastă custom își poate avea iconița ei.
 - Muți HUD-ul cu mouse-ul (`/hudpos`) și îl faci mai mare sau mai mic pentru ecrane mici.
 - **Notificări pop-up** deasupra radarului, cu **culori la alegere** și preview. Opțional, și erorile modului pot apărea ca notificări, nu în chat.
+
+| HUD modern | HUD clasic PDHelper |
+|:---:|:---:|
+| ![HUD modern](images/hud-modern.png) | ![HUD clasic](images/hud-clasic.png) |
+
+![Mutarea HUD-ului](images/hudpos.png)
+![Notificari](images/notificari.png)
 
 ### ⚙️ Automatizări
 - **Login și PIN automat.** Parola se salvează **criptat** (Windows DPAPI), așa că merge doar pe contul tău de Windows.
@@ -71,23 +161,38 @@ PDAssist pornește de la **PDHelper V7.5 (CLEO)** de TheTom. Toate comenzile vec
 - Pornire automată a motorului și Start/Stop.
 - Tasta de frisk caută **cel mai apropiat** jucător și are protecție anti-spam.
 
+![Login automat](images/login.png)
+![PIN automat](images/pin.png)
+
 ### 📻 FVR și GOV
 - `/afvr`: numărătoare automată de FVR pe `/r` și `/d`, cu textele tale. `/sfvr` o anulează.
 - `/pdgov`: trimite liniile de `/gov` setate în `/pdc`.
+
+![FVR in chat](images/fvr.png)
 
 ### 📝 Personal Blacklist: `/pdbl`
 - Lista ta privată de jucători, cu notițe.
 - O poți **fixa pe ecran**: vezi imediat cine e **ON** și cu ce ID.
 - O muți și o lărgești cu mouse-ul: `/blpos`.
 
+![/pdbl](images/blacklist-meniu.png)
+![Blacklist pe ecran](images/blacklist-ecran.png)
+
 ### 🧩 Comenzi și taste personalizate
 - Până la **100 de comenzi custom**: o scurtătură pentru orice comandă lungă, cu mai multe comenzi una după alta și variabile (`<ID>`, `<Zona>`, `<Dept>`…).
 - Până la **50 de keybind-uri**: o tastă trimite textul sau comenzile tale.
 - Spawn direct: `/scasa`, `/slspd`, `/slvpd`, `/ssfpd`, `/sfbi`, `/sjail`, `/sclan`, `/sbunker`, `/hqf`, `/hqng`.
 
+![Comenzi custom](images/pdc-comenzi-custom.png)
+![Keybind-uri](images/pdc-keybinds.png)
+
 ### 🌍 Română / English
 - **Interfața** (meniuri, HUD, roată, notificări, mesaje în chat) poate fi în română sau engleză.
 - **Limba sancțiunilor** trimise jucătorilor se alege separat.
+
+| Română | English |
+|:---:|:---:|
+| ![RO](images/limba-ro.png) | ![EN](images/limba-en.png) |
 
 ---
 
@@ -108,6 +213,8 @@ Toate tastele se pot schimba sau dezactiva din `/pdc → Taste & HUD`.
 | **num \*** | Nearwanted |
 | **5** | Repair |
 | **C** | Porți / lift la Jail și NG |
+
+![Reguli](images/reguli.png)
 
 ---
 
