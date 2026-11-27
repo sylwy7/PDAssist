@@ -13,6 +13,9 @@
 
 PDAssist pornește de la **PDHelper V7.5 (CLEO)** de TheTom. Toate comenzile vechi au rămas, ca să te simți ca acasă. Pe deasupra are interfață nouă (mimgui), meniu de interacțiune în formă de roată și multe funcții noi, unele inspirate din NG-Helper.
 
+> Modul a fost testat de 2 persoane doar pe partea de SWAT, daca apar buguri, dati-mi un mesaj pe Discord: `@sylwy`.
+> EN: The mod has been tested by 2 people only on the SWAT features, in case you find bugs, message me on Discord: `@sylwy`.
+
 🇬🇧 *English speaker? Jump to the [English section](#-english).*
 
 ---
@@ -333,7 +336,7 @@ Salveaz-o din nou în `/pdc → Cont & PIN`. Parola criptată merge doar pe cont
 În `moonloader\config\PDAssist.ini` (setări) și `moonloader\config\PDAssist_wheel.txt` (roata personalizată). Fă-le copie dacă reinstalezi jocul.
 
 **Am găsit un bug sau am o idee.**
-Deschide un [Issue](../../issues) aici pe GitHub. Spune ce ai făcut, ce trebuia să se întâmple și ce s-a întâmplat de fapt. Dacă ai o poză, pune-o și pe ea.
+Mesaj pe discord la `@sylwy`.
 
 ---
 
