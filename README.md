@@ -13,8 +13,9 @@
 
 PDAssist pornește de la **PDHelper V7.5 (CLEO)** de TheTom. Toate comenzile vechi au rămas, ca să te simți ca acasă. Pe deasupra are interfață nouă (mimgui), meniu de interacțiune în formă de roată și multe funcții noi, unele inspirate din NG-Helper.
 
-> Modul a fost testat de 2 persoane doar pe partea de SWAT, daca apar buguri, dati-mi un mesaj pe Discord: `@sylwy`.
-> EN: The mod has been tested by 2 people only on the SWAT features, in case you find bugs, message me on Discord: `@sylwy`.
+> Modul a fost testat de 2 persoane doar pe partea de SWAT & a fost (re)creat in mare parte de AI, daca apar buguri, dati-mi un mesaj pe Discord: `@sylwy`.
+
+> EN: The mod has been tested by 2 people only on the SWAT features and was (re)created mostly by AI, in case you find bugs, message me on Discord: `@sylwy`.
 
 🇬🇧 *English speaker? Jump to the [English section](#-english).*
 
